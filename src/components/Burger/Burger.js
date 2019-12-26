@@ -3,9 +3,9 @@ import classes from '../Burger/Burger.module.css'
 import BurgerIngridient from './BurgerIngridient/BurgerIngridient'
 
 const burger = (props) => {
-    let transformedIngredients = Object.keys(props.ingridients)
+    let transformedIngredients = Object.keys(props.ingredients)
         .map(igKey => {
-            return [...Array(props.ingridients[igKey])].map((_, i) => {
+            return [...Array(props.ingredients[igKey])].map((_, i) => {
                 return <BurgerIngridient key={igKey + i} type={igKey} />;
             });
         })
@@ -27,3 +27,5 @@ const burger = (props) => {
 }
 
 export default burger;
+
+//coporation details fieldset //
